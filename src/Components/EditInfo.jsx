@@ -11,8 +11,8 @@ export default function EditInfo({ employee }) {
 
     const handleClose = () => {
         setShowModal(false);
-        navigate("");
-        window.location.reload()
+        navigate("/");
+        location.reload()
     };
 
     const handleDone = async (id) => {
@@ -28,6 +28,7 @@ export default function EditInfo({ employee }) {
         // localStorage.setItem("empData", JSON.stringify(updatedData));
         await axios.patch(`https://employee-management-backend-7pgq.onrender.com/api/editEmployee/${id}`, empData).then((res) => {
             console.log(res)
+            alert("edited")
         }).catch((err) => [
             console.log(err)
         ])

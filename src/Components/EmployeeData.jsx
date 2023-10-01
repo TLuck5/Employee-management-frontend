@@ -66,11 +66,12 @@ export default function EmployeeData() {
         // }
         await axios.post(`https://employee-management-backend-7pgq.onrender.com/api/deleteEmployee/${id}`).then((response) => [
             console.log(response)
+            alert("deleted")
         ]).catch((err) => {
             console.log(err)
         })
-        navigate("")
-        window.location.reload()
+        navigate("/")
+        location.reload()
     }
     const toggleButton = (Id) => {
         setEditOpen((prevEdit) => !prevEdit)
