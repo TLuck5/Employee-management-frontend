@@ -71,7 +71,7 @@ export default function EmployeeData() {
             console.log(err)
         })
         alert("deleted")
-        navigate("/addEmployee")
+        navigate("/")
         location.reload()
     }
     const toggleButton = (Id) => {
