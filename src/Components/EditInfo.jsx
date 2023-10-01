@@ -11,7 +11,7 @@ export default function EditInfo({ employee }) {
 
     const handleClose = () => {
         setShowModal(false);
-        navigate("/employeedata");
+        navigate("");
         window.location.reload()
     };
 

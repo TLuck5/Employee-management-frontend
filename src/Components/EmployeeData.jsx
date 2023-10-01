@@ -69,7 +69,7 @@ export default function EmployeeData() {
         ]).catch((err) => {
             console.log(err)
         })
-        navigate("/employeedata")
+        navigate("")
         window.location.reload()
     }
     const toggleButton = (Id) => {
